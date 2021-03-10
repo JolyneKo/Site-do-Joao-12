@@ -1,82 +1,86 @@
 @use '../Abstracts' as *;
 
 .header {
-    background-color: $header-bg-color;
-    height: $header-altura;
+  background-color: $header-bg-color;
+  height: $header-altura;
+  display: flex;
+  align-items: center;
+  box-shadow: $header-shadow;
+  white-space: nowrap;
+
+  &__logo {
+    font-family: $logo-font;
+    color: $header-font-color;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin: 0 50px;
+
+    &--active {
+      color: $logo-color-active;
+    }
+  }
+
+  &__links {
     display: flex;
-    align-items: center;
-    box-shadow: $header-shadow;
-    white-space: nowrap;
+    list-style: none;
+    height: 100%;
+
+    &__link {
+      padding: 0 30px;
+      height: 100%;
+      display: flex;
+      align-items: center;
+
+      &:hover {
+        background-color: lighten($header-bg-color, 10%);
+      }
+    }
+
+    a {
+      font-family: $header-links-font;
+      font-size: 1.5rem;
+      color: $header-font-color;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: none;
+      }
+    }
+  }
+
+  &__bars {
+    display: none;
+    visibility: hidden;
+  }
+
+  // Mobile
+  @include mobile {
+    justify-content: center;
+    position: relative;
 
     &__logo {
-        font-family: $logo-font;
-        color: $header-font-color;
-        font-size: 1.8rem;
-        text-transform: uppercase;
-        margin: 0 50px;
-
-        &--active {
-            color: $logo-color-active;
-        }
-
+      font-size: 1.5rem;
     }
 
     &__links {
-        display: flex;
-
-        &__link {
-            padding: 0 30px;
-
-            &:hover {
-                background-color: lighten($header-bg-color, 10%);
-            }
-        }
-
-        a {
-            font-family: $header-links-font;
-            font-size: 1.5rem;
-            color: $header-font-color;
-            text-decoration: none;
-
-            &:hover {
-                text-decoration: none;
-            }
-        }
-
-        &__bars {
-            display: none;;
-        }
+      display: none;
     }
 
-    // Mobile
-    @include mobile {
-        justify-content: center;
-        position: relative;
-        
-        &__logo {
-            font-size: 1.5rem;
-        }
-
-        &__links {
-            display: none;
-        }
-
-        &__bars {
-            display: block;
-            color: white;
-            font-size: 2.3rem;
-            position: absolute;
-            right: 30px;
-        }
+    &__bars {
+      display: block;
+      color: white;
+      font-size: 2.3rem;
+      position: absolute;
+      right: 30px;
     }
+  }
 
-
-    // Tablet
-    @include tablet {
-        &__links {
-            &__link {
-                padding: 0 20px;
-            }
-        }
+  // Tablet
+  @include tablet {
+    &__links {
+      &__link {
+        padding: 0 20px;
+      }
     }
+  }
 }

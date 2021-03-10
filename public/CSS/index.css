@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Oxygen&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 * {
   padding: 0;
@@ -26,9 +26,14 @@
 }
 .header__links {
   display: flex;
+  list-style: none;
+  height: 100%;
 }
 .header__links__link {
   padding: 0 30px;
+  height: 100%;
+  display: flex;
+  align-items: center;
 }
 .header__links__link:hover {
   background-color: #1a1a1a;
@@ -42,8 +47,9 @@
 .header__links a:hover {
   text-decoration: none;
 }
-.header__links__bars {
+.header__bars {
   display: none;
+  visibility: hidden;
 }
 @media (max-width: 913px) {
   .header {
