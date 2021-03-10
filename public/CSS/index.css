@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Oxygen&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  background-color: black;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  white-space: nowrap;
+}
+.header__logo {
+  font-family: "Oxygen", sans-serif;
+  color: white;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  margin: 0 50px;
+}
+.header__logo--active {
+  color: red;
+}
+.header__links {
+  display: flex;
+}
+.header__links__link {
+  padding: 0 30px;
+}
+.header__links__link:hover {
+  background-color: #1a1a1a;
+}
+.header__links a {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
+  color: white;
+  text-decoration: none;
+}
+.header__links a:hover {
+  text-decoration: none;
+}
+.header__links__bars {
+  display: none;
+}
+@media (max-width: 913px) {
+  .header {
+    justify-content: center;
+    position: relative;
+  }
+  .header__logo {
+    font-size: 1.5rem;
+  }
+  .header__links {
+    display: none;
+  }
+  .header__bars {
+    display: block;
+    color: white;
+    font-size: 2.3rem;
+    position: absolute;
+    right: 30px;
+  }
+}
+@media (min-width: 913px) and (max-width: 1020px) {
+  .header__links__link {
+    padding: 0 20px;
+  }
+}
+
+/*# sourceMappingURL=index.css.map */
