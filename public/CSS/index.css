@@ -87,6 +87,12 @@ body {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 913px) {
+  .main {
+    height: auto;
+    background-position: 0 -35px;
+  }
+}
 
 .container {
   display: flex;
@@ -110,6 +116,7 @@ body {
 .container__inputs {
   display: flex;
   flex-direction: column;
+  align-items: center;
   background-color: white;
   padding: 20px 50px;
   width: 100%;
@@ -155,6 +162,20 @@ body {
   text-decoration: none;
   margin-top: 10px;
   font-weight: bold;
+}
+@media (max-width: 913px) {
+  .container {
+    width: 100%;
+    height: 100%;
+  }
+  .container__header {
+    border-radius: 0;
+    background-color: transparent;
+  }
+  .container__inputs {
+    border-radius: 0;
+    height: 100%;
+  }
 }
 
 /*# sourceMappingURL=index.css.map */
