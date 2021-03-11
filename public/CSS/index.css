@@ -80,7 +80,7 @@ body {
 
 .main {
   height: 100%;
-  background: #f3f3f3 url("../../Images/background.jpg") no-repeat center;
+  background: #f3f3f3 url("../Images/background.jpg") no-repeat center;
   background-size: cover;
   display: flex;
   flex-direction: column;
