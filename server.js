@@ -5,6 +5,11 @@ const PORT = 3000;
 
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.get('/registro', (res, req) => {
+    req.sendFile(path.join(__dirname, 'public', 'registro.html'));
+    req.sendFile(path.join(__dirname, 'public', 'CSS', 'index.css'));
+});
+
 app.post('/api/registrar', (res, req) => {
 
 });
