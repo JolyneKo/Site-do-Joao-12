@@ -1,0 +1,96 @@
+@use '../Abstracts/' as *;
+
+// Deixar Body com 100% de uso da tela
+html,
+body {
+  min-height: 100%;
+  height: 100%;
+}
+
+.main {
+  height: 100%;
+  background: #f3f3f3 url("../../Images/background.jpg") no-repeat center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+
+  &__header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    background-color: $container-header-bg-color;
+    width: 100%;
+    box-shadow: $container-shadow;
+
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+
+    h2 {
+      font-family: $main-header-font;
+      font-size: 3rem;
+    }
+  }
+
+  &__inputs {
+    display: flex;
+    flex-direction: column;
+    background-color: $container-inputs-bg-color;
+    padding: 20px 50px;
+    width: 100%;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    box-shadow: $container-shadow;
+
+    input,
+    button {
+      background-color: $input-bg-color;
+      border: none;
+      margin: 10px 0;
+      width: 300px;
+      height: 50px;
+      border-radius: 30px;
+      color: $main-font-color;
+      padding: 0 30px;
+      font-family: $main-font;
+    }
+
+    input::placeholder {
+      color: black;
+      opacity: 100%;
+      font-size: 1rem;
+    }
+
+    button {
+      background-color: $container-header-bg-color;
+      color: white;
+      font-size: 1.3rem;
+    }
+
+    &__switch {
+      margin: 10px 0;
+      color: grey;
+      font-family: $main-font;
+      align-self: center;
+      text-decoration: none;
+      font-size: 1.2rem;
+      display: flex;
+      flex-direction: column;
+
+      &__text--active {
+        text-align: center;
+        color: $container-header-bg-color;
+        text-decoration: none;
+        margin-top: 10px;
+        font-weight: bold;
+      }
+    }
+  }
+}
