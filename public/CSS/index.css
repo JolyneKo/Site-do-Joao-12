@@ -178,6 +178,11 @@ body {
     height: 100%;
   }
 }
+.container #error {
+  color: red;
+  font-family: "Ubuntu", sans-serif;
+  margin: 10px 0;
+}
 
 .menu {
   width: 80%;
