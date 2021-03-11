@@ -1,0 +1,41 @@
+@use '../Abstracts/' as *;
+
+.menu {
+  width: 80%;
+  height: 100%;
+  background-color: $menu-bg-color;
+  visibility: hidden;
+  display: none;
+  border-right: $menu-border-color 5px solid;
+  position: fixed;
+  box-shadow: $header-shadow;
+
+  &__header {
+    font-family: $menu-font;
+    color: red;
+    padding: 10px;
+    text-align: center;
+  }
+
+  &__links {
+    list-style: none;
+
+    &__link {
+      padding: 15px 20px;
+      border-top: grey 2px solid;
+      text-align: center;
+    }
+
+    a {
+      color: white;
+      text-decoration: none;
+      font-family: $menu-font;
+      font-size: 1.2rem;
+    }
+  }
+}
+
+.menu--aberto {
+  display: block;
+  visibility: visible;
+}

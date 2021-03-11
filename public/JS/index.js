@@ -1,0 +1,1 @@
+$('.header__bars').click(() => $('.menu').toggleClass('menu--aberto'));

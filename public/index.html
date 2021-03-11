@@ -9,7 +9,7 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="JS/index.js"></script>
+    <script defer src="JS/index.js"></script>
     <link rel="stylesheet" href="CSS/index.css" />
     <link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
     <title>Teste 01</title>
@@ -25,8 +25,19 @@
         <li class="header__links__link"><a href="#.">Contacts</a></li>
       </ul>
 
-      <i class="fas fa-bars header__bars"></i>
+      <i class="fas fa-bars header__bars" id="menu-icon"></i>
     </header>
+
+    <nav class="menu">
+      <h2 class="menu__header">Menu</h2>
+      <ul class="menu__links">
+        <li class="menu__links__link"><a href="#.">Main</a></li>
+        <li class="menu__links__link"><a href="#.">News</a></li>
+        <li class="menu__links__link"><a href="#.">Terms</a></li>
+        <li class="menu__links__link"><a href="#.">Company</a></li>
+        <li class="menu__links__link"><a href="#.">Contacts</a></li>
+      </ul>
+    </nav>
 
     <main class="main">
       <div class="container">

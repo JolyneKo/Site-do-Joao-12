@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Oxygen&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&display=swap");
@@ -177,6 +177,42 @@ body {
     border-radius: 0;
     height: 100%;
   }
+}
+
+.menu {
+  width: 80%;
+  height: 100%;
+  background-color: black;
+  visibility: hidden;
+  display: none;
+  border-right: #c61d25 5px solid;
+  position: fixed;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.menu__header {
+  font-family: "Oxygen", sans-serif;
+  color: red;
+  padding: 10px;
+  text-align: center;
+}
+.menu__links {
+  list-style: none;
+}
+.menu__links__link {
+  padding: 15px 20px;
+  border-top: grey 2px solid;
+  text-align: center;
+}
+.menu__links a {
+  color: white;
+  text-decoration: none;
+  font-family: "Oxygen", sans-serif;
+  font-size: 1.2rem;
+}
+
+.menu--aberto {
+  display: block;
+  visibility: visible;
 }
 
 /*# sourceMappingURL=index.css.map */
