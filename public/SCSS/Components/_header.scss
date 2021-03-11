@@ -9,15 +9,8 @@
   white-space: nowrap;
 
   &__logo {
-    font-family: $logo-font;
-    color: $header-font-color;
-    font-size: 1.8rem;
-    text-transform: uppercase;
     margin: 0 50px;
-
-    &--active {
-      color: $logo-color-active;
-    }
+    width: 150px;
   }
 
   &__links {

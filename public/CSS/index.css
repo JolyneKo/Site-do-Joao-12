@@ -17,14 +17,8 @@
   white-space: nowrap;
 }
 .header__logo {
-  font-family: "Oxygen", sans-serif;
-  color: black;
-  font-size: 1.8rem;
-  text-transform: uppercase;
   margin: 0 50px;
-}
-.header__logo--active {
-  color: red;
+  width: 150px;
 }
 .header__links {
   display: flex;
