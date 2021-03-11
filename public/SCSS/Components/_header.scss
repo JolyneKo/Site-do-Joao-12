@@ -61,8 +61,9 @@
 
     &__bars {
       display: block;
-      color: white;
-      font-size: 2.3rem;
+      visibility: visible;
+      color: black;
+      font-size: 2rem;
       position: absolute;
       right: 30px;
     }
