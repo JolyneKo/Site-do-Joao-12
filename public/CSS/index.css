@@ -196,7 +196,7 @@ body {
   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
 .menu__header {
-  font-family: "Oxygen", sans-serif;
+  font-family: Arial, sans-serif;
   color: red;
   padding: 10px;
   text-align: center;
